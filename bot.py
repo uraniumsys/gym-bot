@@ -7,17 +7,17 @@ APP_URL = 'https://gym-mini-app-six.vercel.app'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     keyboard = [
-        [InlineKeyboardButton("🏋️ Открыть приложение", web_app={'url': APP_URL})]
+        [InlineKeyboardButton("🌐 Открыть приложение", web_app={'url': APP_URL})]
     ]
     reply_markup = InlineKeyboardMarkup(keyboard)
     
     await update.message.reply_text(
-        'Привет! Я твой персональный фитнес-тренер 💪\n\n'
+        'Добро пожаловать в gym***\n\n'
         'Здесь ты найдёшь:\n'
         '• Программы тренировок\n'
         '• Отслеживание прогресса\n'
         '• AI-советы по технике\n\n'
-        'Нажми кнопку ниже, чтобы начать! 👇',
+        'Нажми кнопку ниже, чтобы начать 👇',
         reply_markup=reply_markup
     )
 
